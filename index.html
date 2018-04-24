@@ -50,7 +50,7 @@
             <a class="nav-link js-scroll-trigger" href="#CICLO_BASICO_DE_TRABALHO">CICLO BÁSICO DE TRABALHO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#CARACTERSTICAS">CARACTERÍSTICAS </a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
@@ -158,62 +158,45 @@ alto nível Apache, feito este alcançado em 17 de fevereiro de 2010.
 
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="CARACTERSTICAS">
         <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
+		<h2 class="mb-5">CARACTERÍSTICAS </h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-          </ul>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+Ao discutir sobre os recursos que o Subversion traz ao mundo do controle de versão, muitas vezes é útil falar sobre eles em termos de como eles melhoraram o design do CVS. Se você não estiver familiarizado com o CVS, talvez não entenda todas essas características. E se você não estiver familiarizado com o controle de versão, seus olhos podem ficar embaçados, a menos que você leia o Capítulo 2, Noções Básicas primeiro , onde fornecemos uma leve introdução ao controle de versão em geral.</br></br>
 
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
+<b>O Subversion fornece:</b></br></br>
+
+<b>Versão de diretório</br></br></b>
+CVS só controla o histórico de arquivos individuais, mas Subversion implementa um sistema de arquivos com controle de versão " virtual " que rastreia alterações em árvores de diretório inteiras ao longo do tempo. Ambos os arquivos e diretórios estão sob controle de versão.</br></br>
+
+<b>Histórico da versão verdadeira</br></br></b>
+Como o CVS é ​​limitado ao versionamento de arquivos, operações como copiar e renomear - que podem ocorrer em arquivos, mas que são realmente mudanças no conteúdo do diretório em que estão - não são suportadas pelo CVS. Além disso, o CVS não pode substituir um arquivo com versão por algo novo que tenha o mesmo nome, sem que o novo elemento herde o histórico do arquivo antigo - que pode ser completamente diferente do anterior. Com o Subversion, você pode adicionar, excluir, copiar e renomear arquivos e diretórios. E cada novo arquivo adicionado começa com um novo histórico limpo e completamente seu.</br></br>
+
+<b>Embarques atômicos</br></br></b>
+Uma coleção arbitrária de modificações entra no repositório completamente ou não o faz de forma alguma. Isso permite que os desenvolvedores criem e enviem as alterações como fragmentos lógicos e evita que problemas ocorram quando apenas parte das alterações enviadas o fazem com êxito.</br></br>
+
+<b>Versão de metadados</br></br></b>
+Cada arquivo e diretório possui um conjunto de propriedades - chaves e seus valores - associados a ele. Você pode criar e armazenar qualquer par de chave / valor arbitrário que desejar. As propriedades são versionadas ao longo do tempo, assim como o conteúdo dos arquivos.</br></br>
+
+<b>Escolha de camadas de rede</br></br></b>
+O Subversion possui uma noção abstrata de acesso ao repositório, facilitando a implementação de novos mecanismos de rede. O Subversion pode se conectar ao servidor HTTP Apache como um módulo de extensão. Isso proporciona ao Subversion uma grande vantagem em estabilidade e interoperabilidade, e acesso instantâneo aos recursos existentes oferecidos por esse servidor - autenticação, autorização, compactação da conexão e assim por diante. Um servidor Subversion independente também está disponível e é mais leve. Este servidor fala seu próprio protocolo, que pode ser facilmente roteado através de um túnel SSH.</br></br>
+
+<b>Manipulação de dados consistente</br></br></b>
+O Subversion expressa as diferenças do arquivo usando um algoritmo de diferenciação binária, que funciona de forma idêntica com arquivos de texto (legíveis para humanos) e arquivos binários (ilegíveis para humanos). Ambos os tipos de arquivos são armazenados igualmente compactados no repositório e as diferenças são transmitidas em ambas as direções pela rede.</br></br>
+
+<b>Ramificação e rotulagem eficiente</br></br></b>
+O custo de ramificação e rotulagem não precisa ser proporcional ao tamanho do projeto. O Subversion cria ramificações e rótulos simplesmente copiando o projeto, usando um mecanismo semelhante ao link físico. Dessa maneira, essas operações levam apenas um tempo pequeno e constante.</br></br>
+
+<b>Hackability</br></br></b>
+A subversão não possui uma bagagem histórica; Ele é implementado como uma coleção de bibliotecas compartilhadas em C com APIs bem definidas. Isso torna o Subversion extremamente fácil de manter e reutilizável por outros aplicativos e idiomas.</br></br>
+</div>
+		
+  
+
+
+ 
         </div>
       </section>
 
